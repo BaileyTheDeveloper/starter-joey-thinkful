@@ -1,0 +1,47 @@
+header h1 {
+	font-size: 52px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0b1c51;
+	color: white;
+	font-family: "Montserrat";
+}
+
+header li {
+	display: inline;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header a:visited {
+	color: white;
+}
+
+@media screen and (min-width: 600px) {
+	header {
+		display: flex;
+        flex-direction: row;
+		justify-content: space-between;
+		background-color: #0b1c51;
+		color: white;
+		font-family: "Montserrat";
+        padding: 0 30px;
+	}
+    header h1{
+          /* Sets 14 pixels of margin above and below the `h1` and sets 
+        0 pixels of margin to the left and right. */
+    margin: 14px 0;
+    /* Removes or sets 0 pixels of padding above the `h1`. */
+    padding-top: 0;
+  }
+    header li{
+        padding: 10px;
+    }
+}
+
